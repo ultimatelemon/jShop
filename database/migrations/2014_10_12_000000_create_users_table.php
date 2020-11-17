@@ -24,7 +24,6 @@ class CreateUsersTable extends Migration
             $table->string('company_name');
             $table->boolean('receive_newsletter');
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('remember_token');
             $table->rememberToken();
             $table->timestamps();
         });

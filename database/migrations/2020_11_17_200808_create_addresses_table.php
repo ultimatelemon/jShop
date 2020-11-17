@@ -23,7 +23,7 @@ class CreateAddressesTable extends Migration
             $table->string('address');
             $table->string('zip_code');
             $table->string('city');
-            $table->foreignId('country_id')->constrained('countries', 'country_id');
+            $table->foreignId('country_id');
             $table->string('phone_number')->nullable();
             $table->boolean('is_active');
             $table->timestamps();
